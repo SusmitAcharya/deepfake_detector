@@ -1,0 +1,15 @@
+data:
+  raw_path: "data/raw/"
+  processed_path: "data/processed/"
+  labels_path: "data/annotations/"
+
+model:
+  architecture: "mobilenet_v3"
+  input_shape: [224, 224, 3]
+  batch_size: 16
+  epochs: 10
+  learning_rate: 0.0001
+
+output:
+  reports_path: "results/reports/"
+  graphs_path: "results/graphs/"

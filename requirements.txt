@@ -1,0 +1,36 @@
+# Core Machine Learning
+tensorflow
+numpy
+pandas
+scikit-learn
+
+# Computer Vision
+opencv-python
+Pillow
+
+# Visualization & Analysis
+matplotlib
+seaborn
+
+# Web App / API
+streamlit
+fastapi
+uvicorn
+
+# Config & Utilities
+PyYAML
+tqdm
+requests
+joblib
+psutil
+
+# Reporting / Export
+reportlab
+fpdf2
+
+# Optional: Notebook / experimentation
+jupyterlab
+
+# Compatibility helpers
+protobuf
+h5py

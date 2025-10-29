@@ -1,0 +1,11 @@
+Evaluation Summary
+===================
+Model weights: mobilenet_v3_final.h5
+Validation samples: 2406
+
+Accuracy:  0.6804
+Precision: 0.6752
+Recall:    0.9950
+F1 Score:  0.8045
+ROC-AUC:   0.7008
+Inference per frame: 0.00656s (152.51 FPS)

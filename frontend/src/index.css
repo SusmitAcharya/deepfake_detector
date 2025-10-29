@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Minimalist Cybersecurity Trio-Tone Theme */
+    /* Primary - Dark midnight blue background */
+    --background: 220 29% 6%;
+    --foreground: 210 15% 85%;
+
+    /* Secondary - Deep slate blue for cards/surfaces */
+    --card: 218 33% 15%;
+    --card-foreground: 210 15% 85%;
+
+    --popover: 218 33% 15%;
+    --popover-foreground: 210 15% 85%;
+
+    /* Accent - Vivid electric cyan for interactive elements */
+    --primary: 195 100% 50%;
+    --primary-foreground: 220 29% 6%;
+
+    /* Secondary surfaces */
+    --secondary: 218 30% 20%;
+    --secondary-foreground: 210 15% 85%;
+
+    --muted: 218 30% 18%;
+    --muted-foreground: 210 10% 55%;
+
+    /* Accent variations */
+    --accent: 218 30% 20%;
+    --accent-foreground: 210 15% 85%;
+
+    /* Muted red for deepfake detection */
+    --destructive: 0 65% 58%;
+    --destructive-foreground: 210 15% 95%;
+
+    /* Muted teal for authentic detection */
+    --success: 160 45% 55%;
+    --success-foreground: 220 29% 6%;
+
+    --border: 218 30% 20%;
+    --input: 218 30% 20%;
+    --ring: 195 100% 50%;
+
+    --radius: 0.5rem;
+
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .gradient-subtle {
+    background: linear-gradient(180deg, hsl(220 29% 6%), hsl(220 29% 8%));
+  }
+  
+  .hover-glow {
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .hover-glow:hover {
+    box-shadow: 0 0 20px hsl(195 100% 50% / 0.3);
+  }
+}
